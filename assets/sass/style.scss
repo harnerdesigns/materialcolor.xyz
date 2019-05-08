@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -20,9 +21,9 @@ h1 {
 p {
   line-height: 1.5em;
 }
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -38,25 +39,40 @@ a {
 main,
 header,
 footer,
-.ad {
+.ad,
+.changeLog {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
 }
 header {
-
   display: flex;
   padding: 1em 0;
-  align-items: center; justify-content: flex-start;
-  h1{
-      margin: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  h1 {
+    margin: 0;
   }
 
-  img{
-
-    height: auto; width: 100%;
+  img {
+    height: auto;
+    width: 100%;
     margin: 0.25em;
+  }
 
+  nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      padding: 0.25em;
+      &:hover {
+        background: $accentColor;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -73,14 +89,13 @@ footer {
   }
 }
 
+#get {
+  margin: 1em 0;
 
-#get{
-
-    margin: 1em 0;
-
-    h1{
-        font-size: 2em; text-align: center;
-    }
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
 }
 
 .buttons {
@@ -95,12 +110,13 @@ footer {
     padding: 0.5em;
     color: #fff;
     background: $accentColor;
-    border-radius: 0.5em; width: 40%;
-        @include card(1);
+    border-radius: 0.5em;
+    width: 40%;
+    @include card(1);
 
-    &:hover{
-        background: lighten($accentColor, 10);
-        @include card(2);
+    &:hover {
+      background: lighten($accentColor, 10);
+      @include card(2);
     }
 
     svg {
@@ -112,35 +128,34 @@ footer {
   }
 }
 
-.issues{
-    text-align: center;
-    font-size: 0.9em;
+.issues {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+  a {
     color: #aaa;
-    a{
-        color: #aaa;
-    }
+  }
 }
 
+.ad {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 2px solid $accentColor;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 2px solid $accentColor;
 
-.ad{
-    margin-top: 2em;
-    padding-top: 2em;
-    border-top: 2px solid $accentColor;
-        margin-bottom: 2em;
-    padding-bottom: 2em;
-    border-bottom: 2px solid $accentColor;
-
-    h3{
-        font-weight: 400;
-        color: #aaa;
-        text-align: center;
-    }
-    .makerad{
-    
-        @include card(2);
-        margin: 1em auto;
-        display: block;
-
+  h3 {
+    font-weight: 400;
+    color: #aaa;
+    text-align: center;
+  }
+  .makerad {
+    @include card(2);
+    margin: 1em auto;
+    display: block;
+  }
 }
 
+.changeLog {
 }
