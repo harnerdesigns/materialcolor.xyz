@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: materialcolor.xyz
+Token: 508590df888ba06cf069e57263987b0ad64021535dc6d6d44c24965c6e255210
