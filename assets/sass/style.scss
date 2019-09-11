@@ -6,6 +6,10 @@ $accentColor: rgb(33, 150, 243);
 * {
   box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 
 body {
   font-family: "Roboto", sans-serif;
