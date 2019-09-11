@@ -1,0 +1,13 @@
+.chrome-stats,
+.firefox-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: auto;
+    height: 1.5em;
+    margin: 0.25em;
+  }
+}
