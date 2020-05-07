@@ -155,9 +155,10 @@ footer {
     color: #aaa;
     text-align: center;
   }
-  .makerad {
+  img {
     @include card(2);
     margin: 1em auto;
+	width: auto;
     display: block;
   }
 }
